@@ -1,0 +1,60 @@
+[
+  {
+    "name": "서울",
+    "img": "images/seoul.jpg",
+    "imgDesc": "서울관",
+    "operating": "월요일,화요일,목요일,금요일,일요일",
+    "operating-time": "10: 00-18: 00",
+    "night-operating": "수요일, 토요일 야간개장",
+    "night-operating-time": "10:00-21:00",
+    "tags": [
+      "전시",
+      "필름앤비디오",
+      "다원예술",
+      "교육",
+      "이벤트"
+    ]
+  },
+  {
+    "name": "과천",
+    "img": "images/gwacheon.jpeg",
+    "imgDesc": "과천관",
+    "operating": "화요일–일요일(월요일 휴관)",
+    "operating-time": "10: 00-18: 00",
+    "night-operating": "",
+    "night-operating-time": "",
+    "tags": [
+      "전시",
+      "어린이 미술관",
+      "교육",
+      "이벤트"
+    ]
+  },
+  {
+    "name": "덕수궁",
+    "img": "images/deoksugung.jpeg",
+    "imgDesc": "덕수궁관",
+    "operating": "화요일,목요일,금요일,일요일(월요일 휴관)",
+    "operating-time": "10: 00-18: 00",
+    "night-operating": "수요일, 토요일 야간개장",
+    "night-operating-time": "10:00-21:00",
+    "tags": [
+      "전시",
+      "교육",
+      "이벤트"
+    ]
+  },
+  {
+    "name": "청주",
+    "img": "images/cheongju.jpeg",
+    "imgDesc": "청주관",
+    "operating": "화요일–일요일(월요일 휴관)",
+    "operating-time": "10: 00-18: 00",
+    "night-operating": "",
+    "night-operating-time": "",
+    "tags": [
+      "전시",
+      "이벤트"
+    ]
+  }
+]

@@ -1,0 +1,130 @@
+/* styles.css */
+@import "../node_modules/normalize.css/normalize.css";
+@import "../node_modules/reset-css/reset.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 1340px;
+  margin: 0 auto;
+}
+.sec-tt {
+  /* 섹션 타이틀 */
+  text-align: center;
+  margin: 50px 0;
+}
+/* header */
+.header {
+  background: linear-gradient(
+    180deg,
+    rgba(14, 18, 42, 0.3) 0%,
+    rgba(0, 0, 0, 0.1) 37.05%,
+    rgba(0, 0, 0, 0) 64.71%
+  );
+  padding-top: 10px;
+  text-align: center;
+}
+
+.header h1 {
+  background-repeat: no-repeat;
+  background-image: url(../public/images/logo.png);
+  background-position: center center;
+  background-size: cover;
+  width: 61px;
+  height: 62px;
+  text-indent: -9999em;
+  z-index: 10px;
+  transition: 0.5s;
+  display: inline-block;
+}
+.header.sticky {
+  position: sticky;
+  top: 0;
+  background: #000;
+  z-index: 100;
+}
+.header.sticky .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header.sticky h1 {
+  width: 36px;
+  height: 37px;
+}
+.header.sticky .menu ul {
+  margin-top: 0;
+}
+.header.sticky .submenu {
+  height: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  top: 150%;
+}
+.home-img {
+  background-image: url(../public/images/home-001.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  /* position: absolute; */
+  position: relative;
+  top: -120px;
+  z-index: -1;
+}
+.menu {
+  text-align: center;
+}
+.menu ul {
+  /* display: inline-flex; */
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 30px;
+  color: #fff;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 16px;
+  position: relative;
+}
+
+.menu ul .submenu {
+  position: absolute;
+  top: 100%;
+  display: none;
+  left: 0;
+  transition: 0.5s;
+  width: 100vw;
+}
+.menu > ul > li.active .submenu {
+  position: absolute;
+  top: 100%;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: rgba(14, 18, 42, 0.8); */
+  /* width: 100%; */
+  width: 100vw;
+}
+
+/* header end */
+
+/* information */
+.info img {
+  width: 100%;
+}
+.info h3 {
+  font-size: 20px;
+  margin: 10px 0 16px;
+  text-align: center;
+}
+.info p {
+  font-size: 14px;
+}
