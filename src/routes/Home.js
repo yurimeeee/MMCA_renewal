@@ -1,6 +1,7 @@
 import React from "react";
 import BranchData from "../data/branch.json";
 import ExhibitonSlide from "../components/ExhibitionSlide";
+import collectionData from "../data/collection.json";
 
 const Home = () => {
   // console.log(BranchData);
@@ -46,10 +47,27 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="sec2 container">
+      <section className="sec3 container">
         <h2 className="sec-tt">EXHIBITION</h2>
         <div className="container">
           <ExhibitonSlide />
+        </div>
+      </section>
+      <section className="sec4">
+        <h2 className="sec-tt">COLLECTION</h2>
+        <div className="">
+          <div className="row coll-wrap">
+            {collectionData.map((item, index) => (
+              <div className="col coll-box" key={index}>
+                <div className="coll-bg">
+                  <p>{item.year}</p>
+                  <img src={item.img} alt={item.imgDesc} />
+                </div>
+                <h3>{item.name}</h3>
+                <p>{item.artist}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </main>

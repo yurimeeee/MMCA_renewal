@@ -173,21 +173,142 @@ section {
 .swiper-slide img {
   width: 100%;
   object-fit: contain;
-  position: relative;
+  transition: 0.4s;
 }
 .swiper-slide {
   position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.swiper-slide:hover img {
+  filter: blur(7px);
+}
+.swiper-slide:hover .ex-info {
+  opacity: 1;
 }
 
-.swiper-slide img::after {
+.ex-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+  padding: 20px 16px;
+}
+
+.ex-info p {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.ex-info h4 {
+  font-size: 28px;
+  font-weight: 200;
+  width: 150px;
+}
+.ex-info h3 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+}
+.ex-info a {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 55px;
+  width: 227px;
+  border: 1px solid #fff;
+  padding: 0 10px;
+  position: relative;
+  background: transparent;
+  transition: 0.3s;
+}
+.ex-info a::after {
   content: "";
   display: block;
   position: absolute;
-  height: 100%;
+  /* background: #fff; */
   width: 100%;
-  background: #000;
+  height: 100%;
+  top: 5px;
+  right: -5px;
+  z-index: -100;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  transition: 0.3s;
+}
+.ex-info a:hover {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 55px;
+  width: 227px;
+  border: 1px solid #fff;
+  padding: 0 10px;
+  background: #fff;
+  color: #1a1a1a;
+}
+.ex-info a:hover svg path {
+  stroke: #1a1a1a;
+}
+.ex-info a:hover::after {
   top: 0;
-  left: 0;
   right: 0;
-  z-index: 10;
+  /* border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff; */
+}
+.ex-info a svg {
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+/* collection */
+.sec4.container {
+  width: 1600px;
+}
+.coll-wrap {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.sec .col {
+  flex: 0 0;
+}
+.coll-box {
+  min-width: 300px;
+}
+.coll-box h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 16px 0 4px;
+}
+.coll-box p {
+  font-size: 13px;
+}
+.coll-bg p {
+  position: absolute;
+  color: #767676;
+  right: 10px;
+  top: 6px;
+}
+.coll-bg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  height: 300px;
+  background: #f9f9f9;
+}
+.coll-bg img {
+  max-width: 270px;
+  height: 80%;
+  object-fit: contain;
 }

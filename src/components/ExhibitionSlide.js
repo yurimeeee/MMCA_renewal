@@ -25,18 +25,31 @@ export default function ExhibitonSlide() {
       >
         {ExSlideData[0].Seoul.map((item, idx) => (
           <SwiperSlide>
-            <img src={item.img} alt={item.img} />
+            <img src={item.img} alt={item.name} />
+            <div className="ex-info">
+              <div>
+                <p>{item.branch}</p>
+                <h4>{item.date}</h4>
+              </div>
+
+              <div>
+                <h3>{item.name}</h3>
+                <a href="">
+                  티켓 예매{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="58"
+                    height="10"
+                    viewBox="0 0 58 10"
+                    fill="none"
+                  >
+                    <path d="M0.5 9.5H56.5L45.5 1" stroke="white" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </SwiperSlide>
         ))}
-
-        {/* <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide> */}
       </Swiper>
     </>
   );
