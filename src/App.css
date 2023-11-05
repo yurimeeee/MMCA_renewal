@@ -16,6 +16,10 @@ body a {
   /* 섹션 타이틀 */
   text-align: center;
   margin: 50px 0;
+  letter-spacing: 4px;
+}
+section {
+  margin: 160px 0;
 }
 /* header */
 .header {
@@ -119,12 +123,71 @@ body a {
 /* information */
 .info img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 .info h3 {
   font-size: 20px;
-  margin: 10px 0 16px;
+  margin: 10px;
   text-align: center;
+}
+
+.operating {
+  border-top: 1px solid #000;
+  padding-top: 4px;
+  height: 60px;
 }
 .info p {
   font-size: 14px;
+  white-space: normal;
+  margin-bottom: 0;
+  position: relative;
+  /* height: 24px; */
+}
+.info p > span {
+  position: absolute;
+  right: 0;
+}
+.event-tag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.event-tag a {
+  font-size: 13px;
+  line-height: 24px;
+  display: inline-block;
+  padding: 0 8px;
+  /* border-radius: 20px; */
+  border: 1px solid #000;
+  transition: 0.3s;
+  /* color: #fff; */
+  /* background: #000; */
+}
+.event-tag a:hover {
+  color: #fff;
+  background: #000;
+}
+
+/* exhibition */
+.swiper-slide img {
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+}
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }

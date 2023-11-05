@@ -1,0 +1,36 @@
+[
+  {
+    "Seoul": [
+      {
+        "branch": "Seoul",
+        "name": "프로젝트 해시태그 2023",
+        "date": "23.11.03 ~ 24.04.07",
+        "img": "images/exhibition/seoul/se_5.png"
+      },
+      {
+        "branch": "Seoul",
+        "name": "올해의 작가상 2023",
+        "date": "23.10.20 ~ 24.03.31",
+        "img": "images/exhibition/seoul/se_4.png"
+      },
+      {
+        "branch": "Seoul",
+        "name": "2023 막간",
+        "date": "23.10.13 ~ 23.11.19",
+        "img": "images/exhibition/seoul/se_3.png"
+      },
+      {
+        "branch": "Seoul",
+        "name": "MMCA 현대차 시리즈 2023: 정연두 - 백년 여행기",
+        "date": "23.09.06 ~ 24.02.25",
+        "img": "images/exhibition/seoul/se_2.png"
+      },
+      {
+        "branch": "Seoul",
+        "name": "백 투 더 퓨처: 한국 현대미술의 동시대성 탐험기",
+        "date": "23.06.16 ~ 24.05.26",
+        "img": "images/exhibition/seoul/se_1.png"
+      }
+    ]
+  }
+]
