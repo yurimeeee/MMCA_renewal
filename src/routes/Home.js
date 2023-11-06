@@ -8,15 +8,17 @@ const Home = () => {
   return (
     <main>
       <div className="home-img"></div>
-      <section className="sec1 container">
+      <section className="sec1 container d-flex justify-content-between">
         <div>
           <h2>국립현대미술관 관람 예약하기</h2>
           <p>화요일-일요일 10:00-18:00 (월요일 서울 개관)</p>
           <p>서울·덕수궁:수요일, 토요일 야간개장 10:00-21:00</p>
         </div>
-        <a className="reservation btns" href="#">
-          전시 예약
-        </a>
+        <div>
+          <a className="reservation btns" href="#">
+            전시 예약
+          </a>
+        </div>
       </section>
       <section className="sec2 container">
         <h2 className="sec-tt">INFORMATION</h2>
@@ -68,6 +70,20 @@ const Home = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="sec4">
+        <h2 className="sec-tt">DIGITAL GALLERY</h2>
+        <div className="">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/Xzuykkp8vZ4?si=nAOzv1dzC40tA3fp?rel=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
       </section>
     </main>

@@ -4,7 +4,7 @@ import ExSlideData from "../data/ExSlide.json";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 // Swiper.use([Pagination, Navigation]);
 
@@ -84,6 +84,12 @@ export default function ExhibitonSlide() {
         onSwiper={setSwiper}
         slidesPerView={4}
         spaceBetween={0}
+        autoplay={{
+          speed: 1500,
+          delay: 2000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
         pagination={{
           type: "fraction",
           el: ".pagination2",
@@ -112,7 +118,7 @@ export default function ExhibitonSlide() {
         //   nextEl: ".swiper-button-next", // 다음 버튼
         //   prevEl: ".swiper-button-prev", // 이전 버튼
         // }}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper container"
       >
         {showAll

@@ -7,10 +7,13 @@ body a {
   text-decoration: none;
   color: inherit;
 }
-
+ol,
+ul {
+  padding-left: 0;
+}
 .container {
   /* width: 1340px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 .sec-tt {
   /* 섹션 타이틀 */
@@ -21,6 +24,7 @@ body a {
 section {
   margin: 160px 0;
 }
+
 /* header */
 .header {
   background: linear-gradient(
@@ -29,7 +33,6 @@ section {
     rgba(0, 0, 0, 0.1) 37.05%,
     rgba(0, 0, 0, 0) 64.71%
   );
-  padding-top: 10px;
   text-align: center;
 }
 
@@ -44,17 +47,19 @@ section {
   z-index: 10px;
   transition: 0.5s;
   display: inline-block;
+  margin-top: 10px;
 }
 .header.sticky {
   position: sticky;
   top: 0;
   background: #000;
   z-index: 100;
+  /* padding-bottom: 10px; */
 }
 .header.sticky .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 .header.sticky h1 {
   width: 36px;
@@ -62,11 +67,11 @@ section {
 }
 .header.sticky .menu ul {
   margin-top: 0;
+  line-height: 55px;
 }
 .header.sticky .submenu {
-  height: 40px;
+  line-height: 45px;
   background: rgba(0, 0, 0, 0.7);
-  top: 150%;
 }
 .home-img {
   background-image: url(../public/images/home-001.jpg);
@@ -87,7 +92,7 @@ section {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  gap: 30px;
+  /* gap: 30px; */
   color: #fff;
   font-family: Plus Jakarta Sans;
   font-size: 14px;
@@ -96,6 +101,9 @@ section {
   line-height: normal;
   margin-top: 16px;
   position: relative;
+}
+.menu li {
+  padding: 0 15px;
 }
 
 .menu ul .submenu {
@@ -106,7 +114,7 @@ section {
   transition: 0.5s;
   width: 100vw;
 }
-.menu > ul > li.active .submenu {
+.menu > ul > li:hover .submenu {
   position: absolute;
   top: 100%;
   display: flex;
@@ -117,10 +125,34 @@ section {
   /* width: 100%; */
   width: 100vw;
 }
+/* .menu > ul > li.active .submenu {
+  position: absolute;
+  top: 100%;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+} */
+
+@media (max-width: 480px) {
+  .menu li {
+    padding: 0 7px;
+  }
+}
 
 /* header end */
 
 /* information */
+.sec1 {
+  margin: -50px 0 0;
+}
+.reservation.btns {
+  font-size: 20px;
+  padding: 10px 20px;
+  display: inline-block;
+  border: 1px solid #000;
+}
 .info img {
   width: 100%;
   height: 200px;
@@ -174,6 +206,7 @@ section {
     margin-bottom: 40px;
   }
 }
+/* information end */
 
 /* exhibition */
 .swiper-slide img {
@@ -342,6 +375,7 @@ section {
     font-size: 20px;
   }
 }
+/* exhibition end */
 
 /* collection */
 .sec4.container {
@@ -387,4 +421,34 @@ section {
   max-width: 270px;
   height: 80%;
   object-fit: contain;
+}
+/* collection end*/
+
+/* footer */
+footer {
+  background: #000;
+  padding: 40px 0 5px;
+  font-size: 13px;
+  color: #f3f3f3;
+}
+footer h3 {
+  font-size: 18px;
+}
+footer .logo {
+  width: 83px;
+  height: 84px;
+  text-indent: -9999rem;
+  background: url(/public/images/f-logo.png) no-repeat center/cover;
+}
+footer p {
+  text-align: center;
+}
+/* flex-xs-column flex-sm-row */
+
+@media (max-width: 480px) {
+  footer .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
