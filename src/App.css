@@ -9,7 +9,7 @@ body a {
 }
 
 .container {
-  width: 1340px;
+  /* width: 1340px; */
   margin: 0 auto;
 }
 .sec-tt {
@@ -169,6 +169,12 @@ section {
   background: #000;
 }
 
+@media (max-width: 768px) {
+  .info {
+    margin-bottom: 40px;
+  }
+}
+
 /* exhibition */
 .swiper-slide img {
   width: 100%;
@@ -214,26 +220,33 @@ section {
   width: 150px;
 }
 .ex-info h3 {
-  font-size: 32px;
+  font-size: max(1.4rem, min(2vw, 2rem)); /*32*/
+  /* font-size: 32px; */
   font-style: normal;
   font-weight: 600;
 }
 .ex-info a {
-  display: inline-block;
-  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  font-size: max(0.8rem, min(2vw, 1.4rem));
   line-height: 55px;
-  width: 227px;
+  width: 85%;
   border: 1px solid #fff;
   padding: 0 10px;
   position: relative;
   background: transparent;
   transition: 0.3s;
 }
+.ex-info a:hover {
+  background: #fff;
+  color: #1a1a1a;
+}
 .ex-info a::after {
   content: "";
   display: block;
   position: absolute;
-  /* background: #fff; */
   width: 100%;
   height: 100%;
   top: 5px;
@@ -243,28 +256,91 @@ section {
   border-bottom: 4px solid #fff;
   transition: 0.3s;
 }
-.ex-info a:hover {
-  display: inline-block;
-  font-size: 24px;
-  line-height: 55px;
-  width: 227px;
-  border: 1px solid #fff;
-  padding: 0 10px;
-  background: #fff;
-  color: #1a1a1a;
+.ex-info a:hover::after {
+  top: 0;
+  right: 0;
 }
 .ex-info a:hover svg path {
   stroke: #1a1a1a;
 }
-.ex-info a:hover::after {
-  top: 0;
-  right: 0;
-  /* border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff; */
-}
+
 .ex-info a svg {
-  margin-left: 50px;
   margin-bottom: 10px;
+}
+
+.tab-btns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  border-top: 1px solid #969696;
+  border-bottom: 1px solid #969696;
+  margin-bottom: 40px;
+}
+.tab-btns button {
+  color: #969696;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  padding: 10px 0;
+}
+.tab-btns button.active {
+  color: #000000;
+  font-weight: 700;
+  border-bottom: 3px solid #000;
+}
+
+.slide {
+  position: relative;
+}
+.nav-btns {
+  position: absolute;
+  top: calc(100% + 16px);
+  right: 0;
+  display: flex;
+  gap: 10px;
+}
+.pagination2 {
+  /* position: absolute;
+  top: calc(100% + 16px); */
+  /* right: 0; */
+  width: 50px;
+  height: 24px;
+}
+.swiper-pagination-fraction {
+  width: 55px !important;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.nav-btns button {
+  border: none;
+  width: 24px;
+  height: 6px;
+  margin-top: 6px;
+  /* background: transparent; */
+}
+
+.next-btn {
+  background: url(/public/images/next.png) no-repeat center/cover;
+  /* background-size: 50% auto; */
+  /* background-position: center; */
+}
+
+.prev-btn {
+  background: url(/public/images/prev.png) no-repeat center/cover;
+}
+
+@media (max-width: 768px) {
+  .ex-info h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .ex-info a {
+    font-size: 20px;
+  }
 }
 
 /* collection */
