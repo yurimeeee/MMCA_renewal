@@ -2,6 +2,8 @@ import React from "react";
 import BranchData from "../data/branch.json";
 import ExhibitonSlide from "../components/ExhibitionSlide";
 import collectionData from "../data/collection.json";
+import digitalGallery from "../data/digitalGallery.json";
+import { ThreeDots } from "react-bootstrap-icons";
 
 const Home = () => {
   // console.log(BranchData);
@@ -57,6 +59,12 @@ const Home = () => {
       </section>
       <section className="sec4">
         <h2 className="sec-tt">COLLECTION</h2>
+        <p className="see-more container">
+          <a href="">
+            소장품 모두보기
+            <ThreeDots />
+          </a>
+        </p>
         <div className="">
           <div className="row coll-wrap">
             {collectionData.map((item, index) => (
@@ -72,10 +80,26 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="sec4">
+      <section className="sec5 container">
         <h2 className="sec-tt">DIGITAL GALLERY</h2>
-        <div className="">
-          <iframe
+        <p className="see-more container">
+          <a href="">
+            디지털미술관 모두보기
+            <ThreeDots />
+          </a>
+        </p>
+        <div className="row digital-gallery ">
+          {digitalGallery.map((item, index) => (
+            <div class="video-wrap boxs col-md-4" key={index}>
+              <embed src={item.url} allowfullscreen=""></embed>
+              <h3>{item.name}</h3>
+              <p className="gall-desc">
+                <span>{item.upload}</span>
+                <span>조회수 {item.view}회</span>
+              </p>
+            </div>
+          ))}
+          {/* <iframe
             width="560"
             height="315"
             src="https://www.youtube-nocookie.com/embed/Xzuykkp8vZ4?si=nAOzv1dzC40tA3fp?rel=0"
@@ -83,7 +107,7 @@ const Home = () => {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
-          ></iframe>
+          ></iframe> */}
         </div>
       </section>
     </main>
