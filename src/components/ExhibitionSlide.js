@@ -125,7 +125,7 @@ export default function ExhibitonSlide() {
           ? // 전체 보기 상태일 때
             getAllExhibitions().map((item, idx) => (
               <SwiperSlide key={idx}>
-                <img src={item.img} alt={item.name} />
+                <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
                 <div className="ex-info">
                   <div>
                     <p>{item.branch}</p>
@@ -152,7 +152,7 @@ export default function ExhibitonSlide() {
           : // 전체 보기 상태가 아닐 때
             getBranchData().map((item, idx) => (
               <SwiperSlide key={idx}>
-                <img src={item.img} alt={item.name} />
+                <img src={process.env.PUBLIC_URL + item.img} alt={item.name} />
                 <div className="ex-info">
                   <div>
                     <p>{item.branch}</p>

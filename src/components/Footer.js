@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { ChevronUp } from "react-bootstrap-icons";
 export default function Footer() {
   const [isVisible, setISvisible] = useState(false);

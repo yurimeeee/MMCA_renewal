@@ -28,7 +28,10 @@ const Home = () => {
           <div className="row card_wrap">
             {BranchData.map((item, index) => (
               <div className="info col-md-3 col-sm-6" key={index}>
-                <img src={item.img} alt={item.imgDesc} />
+                <img
+                  src={process.env.PUBLIC_URL + item.img}
+                  alt={item.imgDesc}
+                />
                 <h3>{item.name}</h3>
                 <div className="operating">
                   <p>
@@ -71,7 +74,10 @@ const Home = () => {
               <div className="col coll-box" key={index}>
                 <div className="coll-bg">
                   <p>{item.year}</p>
-                  <img src={item.img} alt={item.imgDesc} />
+                  <img
+                    src={process.env.PUBLIC_URL + item.img}
+                    alt={item.imgDesc}
+                  />
                 </div>
                 <h3>{item.name}</h3>
                 <p>{item.artist}</p>

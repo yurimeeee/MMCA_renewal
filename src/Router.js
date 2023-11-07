@@ -10,13 +10,13 @@ const AppRouter = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/Preview"></Route>
+        <Route exact path="/" element={<Home />}></Route>
+        {/* <Route path="/Preview"></Route>
         <Route path="/exhibit"></Route>
         <Route path="/education"></Route>
         <Route path="/collection"></Route>
         <Route path="/research"></Route>
-        <Route path="/digital"></Route>
+        <Route path="/digital"></Route> */}
       </Routes>
     </>
   );

@@ -1,5 +1,6 @@
 {
   "name": "mmca",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,6 +19,7 @@
     "react-scripts": "5.0.1",
     "reset": "^0.1.0",
     "reset-css": "^5.0.2",
+    "serve": "^14.2.1",
     "swiper": "^11.0.3",
     "web-vitals": "^2.1.4"
   },
@@ -45,6 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "https://yurimeeee.github.io/MMCA_renewal"
+  }
 }

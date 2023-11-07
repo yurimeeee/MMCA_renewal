@@ -1,7 +1,7 @@
 [
   {
     "name": "서울",
-    "img": "https://yurimeeee.github.io/MMCA_renewal/images/seoul.jpg",
+    "img": "/images/seoul.jpg",
     "imgDesc": "서울관",
     "operating": "월,화,목,금,일",
     "operating-time": "10:00-18:00",
@@ -17,7 +17,7 @@
   },
   {
     "name": "과천",
-    "img": "https://yurimeeee.github.io/MMCA_renewal/images/gwacheon.jpeg",
+    "img": "/images/gwacheon.jpeg",
     "imgDesc": "과천관",
     "operating": "화–일(월요일 휴관)",
     "operating-time": "10:00-18:00",
@@ -32,7 +32,7 @@
   },
   {
     "name": "덕수궁",
-    "img": "https://yurimeeee.github.io/MMCA_renewal/images/deoksugung.jpeg",
+    "img": "/images/deoksugung.jpeg",
     "imgDesc": "덕수궁관",
     "operating": "화,목,금,일(월요일 휴관)",
     "operating-time": "10:00-18:00",
@@ -46,7 +46,7 @@
   },
   {
     "name": "청주",
-    "img": "https://yurimeeee.github.io/MMCA_renewal/images/cheongju.jpeg",
+    "img": "/images/cheongju.jpeg",
     "imgDesc": "청주관",
     "operating": "화–일(월요일 휴관)",
     "operating-time": "10:00-18:00",
