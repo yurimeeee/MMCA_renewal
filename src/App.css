@@ -7,15 +7,17 @@ body a {
   text-decoration: none;
   color: inherit;
 }
+
 ol,
 ul {
   padding-left: 0;
 }
-/* .hidden {
+
+.hidden {
   display: none;
-} */
+}
+
 .sec-tt {
-  /* 섹션 타이틀 */
   text-align: center;
   margin: 50px 0;
   letter-spacing: 4px;
@@ -23,9 +25,11 @@ ul {
 section {
   margin: 160px 0;
 }
+
 .see-more {
   text-align: right;
 }
+
 /* header */
 .header {
   background: linear-gradient(
@@ -38,10 +42,7 @@ section {
 }
 
 .header h1 {
-  background-repeat: no-repeat;
-  background-image: url(../public/images/logo.png);
-  background-position: center center;
-  background-size: cover;
+  background: url(../public/images/logo.png) no-repeat center/cover;
   width: 61px;
   height: 62px;
   text-indent: -9999em;
@@ -50,104 +51,102 @@ section {
   display: inline-block;
   margin-top: 10px;
 }
+
 .header.sticky {
   position: sticky;
   top: 0;
   background: #000;
   z-index: 100;
-  /* padding-bottom: 10px; */
 }
+
 .header.sticky .container {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
+
 .header.sticky h1 {
   width: 36px;
   height: 37px;
 }
-.header.sticky .menu ul {
+
+.header.sticky .menu > ul {
   margin-top: 0;
   line-height: 55px;
 }
+
 .header.sticky .submenu {
   line-height: 45px;
   background: rgba(0, 0, 0, 0.7);
 }
-.home-img {
-  background-image: url(../public/images/home-001.jpg);
-  background-position: center center;
-  background-size: cover;
-  height: 80vh;
-  width: 100%;
-  /* position: absolute; */
+.header.sticky .menu > ul > li {
   position: relative;
-  top: -120px;
-  z-index: -1;
 }
+.header.sticky .menu > ul > li:hover .submenu {
+  position: absolute;
+  left: 0;
+  transform: none;
+}
+
 .menu {
   text-align: center;
 }
+
 .menu ul {
-  /* display: inline-flex; */
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  /* gap: 30px; */
   color: #fff;
-  font-family: Plus Jakarta Sans;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
-  margin-top: 16px;
   position: relative;
+  line-height: 45px;
 }
+/* .menu > ul {
+  line-height: 45px;
+} */
 .menu li {
   padding: 0 15px;
 }
 
 .menu ul .submenu {
-  position: absolute;
-  top: 100%;
+  /* position: absolute; */
+  /* top: 100%; */
   display: none;
-  left: 0;
+  /* left: 0; */
   transition: 0.5s;
-  width: 100vw;
+  /* width: 100vw; */
 }
+
 .menu > ul > li:hover .submenu {
   position: absolute;
-  top: 100%;
+  /* top: 100%; */
   display: flex;
   justify-content: center;
   left: 50%;
   transform: translateX(-50%);
-  /* background: rgba(14, 18, 42, 0.8); */
-  /* width: 100%; */
-  width: 100vw;
+  white-space: nowrap;
 }
-/* .menu > ul > li.active .submenu {
-  position: absolute;
-  top: 100%;
-  display: flex;
-  justify-content: center;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-} */
 
 @media (max-width: 480px) {
   .menu li {
     padding: 0 7px;
   }
 }
-
+.home-img {
+  background: url(../public/images/home-001.jpg) no-repeat center/cover;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  top: -120px;
+  z-index: -1;
+}
 /* header end */
 
 /* information */
 .sec1 {
-  margin: -50px 0 0;
+  margin: -50px auto 0;
 }
+
 .reservation.btns {
   font-size: 20px;
   padding: 10px 20px;

@@ -28,11 +28,12 @@ const Nav = () => {
   return (
     <nav className="menu">
       <ul>
-        <li
+        {/* <li
           className={`${isHovered ? "active" : ""}`}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-        >
+        > */}
+        <li>
           <Link to="/Preview">관람 참여</Link>
           <ul className="submenu">
             <li>서울</li>

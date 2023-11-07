@@ -18,7 +18,7 @@ const Home = () => {
         </div>
         <div>
           <a className="reservation btns" href="">
-            전시 예약
+            전시예약 바로가기
           </a>
         </div>
       </section>
@@ -99,15 +99,6 @@ const Home = () => {
               </p>
             </div>
           ))}
-          {/* <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/Xzuykkp8vZ4?si=nAOzv1dzC40tA3fp?rel=0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe> */}
         </div>
       </section>
     </main>
