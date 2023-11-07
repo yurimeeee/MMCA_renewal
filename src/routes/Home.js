@@ -3,23 +3,25 @@ import BranchData from "../data/branch.json";
 import ExhibitonSlide from "../components/ExhibitionSlide";
 import collectionData from "../data/collection.json";
 import digitalGallery from "../data/digitalGallery.json";
-import { ThreeDots } from "react-bootstrap-icons";
+import { ChevronRight } from "react-bootstrap-icons";
 
 const Home = () => {
   // console.log(BranchData);
   return (
     <main>
       <div className="home-img"></div>
-      <section className="sec1 container d-flex justify-content-between">
-        <div>
-          <h2>국립현대미술관 관람 예약하기</h2>
-          <p>화요일-일요일 10:00-18:00 (월요일 서울 개관)</p>
-          <p>서울·덕수궁:수요일, 토요일 야간개장 10:00-21:00</p>
-        </div>
-        <div>
-          <a className="reservation btns" href="">
-            전시예약 바로가기
-          </a>
+      <section className="sec1 ">
+        <div className="container d-flex justify-content-between">
+          <div>
+            <h2>국립현대미술관 관람 예약하기</h2>
+            <p>화요일-일요일 10:00-18:00 (월요일 서울 개관)</p>
+            <p>서울·덕수궁:수요일, 토요일 야간개장 10:00-21:00</p>
+          </div>
+          <div>
+            <a className="reservation btns" href="">
+              전시예약 바로가기
+            </a>
+          </div>
         </div>
       </section>
       <section className="sec2 container">
@@ -65,7 +67,7 @@ const Home = () => {
         <p className="see-more container">
           <a href="">
             소장품 모두보기
-            <ThreeDots />
+            <ChevronRight />
           </a>
         </p>
         <div className="">
@@ -91,7 +93,7 @@ const Home = () => {
         <p className="see-more container">
           <a href="">
             디지털미술관 모두보기
-            <ThreeDots />
+            <ChevronRight />
           </a>
         </p>
         <div className="row digital-gallery ">

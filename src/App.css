@@ -11,8 +11,12 @@ body a {
 ol,
 ul {
   padding-left: 0;
+  white-space: nowrap;
 }
-
+button {
+  border: none;
+  background: none;
+}
 .hidden {
   display: none;
 }
@@ -28,6 +32,9 @@ section {
 
 .see-more {
   text-align: right;
+}
+.see-more svg {
+  vertical-align: text-bottom;
 }
 
 /* header */
@@ -145,14 +152,46 @@ section {
 /* information */
 .sec1 {
   margin: -50px auto 0;
+  /* background: #000; */
 }
-
+.sec1 h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.sec1 p {
+  margin-bottom: 4px;
+}
 .reservation.btns {
   font-size: 20px;
   padding: 10px 20px;
+  position: relative;
   display: inline-block;
   border: 1px solid #000;
+  background: #fff;
+  transition: 0.3s;
 }
+.reservation.btns:hover {
+  background: #000000;
+  color: #ffffff;
+}
+.reservation::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  right: -5px;
+  z-index: -100;
+  border-right: 4px solid #000000;
+  border-bottom: 4px solid #000000;
+  transition: 0.3s;
+}
+.reservation:hover::after {
+  top: 0;
+  right: 0;
+}
+
 .info img {
   width: 100%;
   height: 200px;
@@ -204,6 +243,15 @@ section {
 @media (max-width: 768px) {
   .info {
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .sec1 .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .reservation.btns {
+    font-size: 16px;
   }
 }
 /* information end */
@@ -413,14 +461,18 @@ section {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-
   height: 300px;
   background: #f9f9f9;
+  transition: 0.4s;
 }
 .coll-bg img {
   max-width: 270px;
   height: 80%;
   object-fit: contain;
+}
+
+.coll-bg:hover {
+  background: #f4f4f4;
 }
 /* collection end*/
 
@@ -466,9 +518,10 @@ footer p {
   width: 45px;
   height: 45px;
   line-height: 38px;
+  z-index: 100;
   text-align: center;
   border-radius: 50%;
-  background: #575757;
+  background: #57575787;
   color: #f3f3f3;
   position: fixed;
   right: 5vw;
@@ -490,4 +543,67 @@ footer p {
     justify-content: center;
     align-items: center;
   }
+  .top-btn {
+    bottom: 60px;
+  }
+}
+
+/* popup */
+.popup {
+  position: fixed;
+  z-index: 1000;
+  width: 410px;
+  height: 385px;
+  background: #0d1321e3;
+  color: #fff;
+  text-align: left;
+  left: 20px;
+  top: 20px;
+}
+
+.popup * {
+  margin-bottom: 0;
+}
+
+.popup-info {
+  padding: 16px 20px;
+}
+
+.popup-info h2 {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.popup-info h3 {
+  font-size: 20px;
+  margin: 40px 0 20px;
+}
+
+.popup-info p,
+.popup-info ul {
+  font-size: 14px;
+}
+
+.popup-info ul {
+  margin-top: 12px;
+}
+
+.popup a,
+.cookie-btn {
+  text-decoration: underline;
+}
+
+.popup-btns {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-btns button {
+  color: #fff;
+}
+
+.popup hr {
+  border: 1.5px solid #fff;
 }

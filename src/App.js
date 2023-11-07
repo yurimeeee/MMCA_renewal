@@ -1,8 +1,10 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import AppRouter from "./Router";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import NoticePopUp from "./components/NoticePopUp";
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
@@ -39,14 +41,26 @@ function App() {
     };
   }, []);
 
+  // 새로고침
+  const handleRefresh = () => {
+    window.location.reload();
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
   return (
     <div className="App">
       <header className={`header ${isSticky ? "sticky" : ""}`}>
+        <NoticePopUp />
         <div className="container">
-          <h1>MMCA</h1>
+          <Link to="/">
+            <h1 onClick={handleRefresh}>MMCA</h1>
+          </Link>
           <Nav />
         </div>
       </header>
+
       <AppRouter />
       <Footer />
     </div>
