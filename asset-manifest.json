@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.9673eebb.css",
-    "main.js": "./static/js/main.d32edf12.js",
+    "main.css": "./static/css/main.69ae0325.css",
+    "main.js": "./static/js/main.35ae6714.js",
     "static/media/home-001.jpg": "./static/media/home-001.97f7b4ced1bf7de23e6d.jpg",
     "static/media/f-logo.png": "./static/media/f-logo.ec28856be3d842ec56fb.png",
     "index.html": "./index.html",
-    "main.9673eebb.css.map": "./static/css/main.9673eebb.css.map",
-    "main.d32edf12.js.map": "./static/js/main.d32edf12.js.map"
+    "main.69ae0325.css.map": "./static/css/main.69ae0325.css.map",
+    "main.35ae6714.js.map": "./static/js/main.35ae6714.js.map"
   },
   "entrypoints": [
-    "static/css/main.9673eebb.css",
-    "static/js/main.d32edf12.js"
+    "static/css/main.69ae0325.css",
+    "static/js/main.35ae6714.js"
   ]
 }
