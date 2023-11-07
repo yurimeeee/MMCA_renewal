@@ -17,7 +17,7 @@ const Home = () => {
           <p>서울·덕수궁:수요일, 토요일 야간개장 10:00-21:00</p>
         </div>
         <div>
-          <a className="reservation btns" href="#">
+          <a className="reservation btns" href="">
             전시 예약
           </a>
         </div>
@@ -42,7 +42,7 @@ const Home = () => {
                 <div className="event-tag">
                   {item.tags.map((tag, index) => (
                     <span key={index}>
-                      <a href="#">{tag}</a>
+                      <a href="">{tag}</a>
                     </span>
                   ))}
                 </div>
@@ -90,8 +90,8 @@ const Home = () => {
         </p>
         <div className="row digital-gallery ">
           {digitalGallery.map((item, index) => (
-            <div class="video-wrap boxs col-md-4" key={index}>
-              <embed src={item.url} allowfullscreen=""></embed>
+            <div className="video-wrap boxs col-md-4" key={index}>
+              <embed src={item.url}></embed>
               <h3>{item.name}</h3>
               <p className="gall-desc">
                 <span>{item.upload}</span>

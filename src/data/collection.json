@@ -2,35 +2,35 @@
   {
     "name": "3개의 세계(에셔에 의한, 청계고가도로 1/13/97",
     "artist": "김범 KIM Beom",
-    "img": "images/collection/col_1.png",
+    "img": "/images/collection/col_1.png",
     "imgDesc": "3개의 세계",
     "year": "1997"
   },
   {
     "name": "내 날개 아래 바람 '99-A",
     "artist": "이영애 LEE Youngae",
-    "img": "images/collection/col_2.png",
+    "img": "/images/collection/col_2.png",
     "imgDesc": "내 날개 아래 바람",
     "year": "1999"
   },
   {
     "name": "수중 파빌리온",
     "artist": "더그 에이트킨 Doug AITKEN",
-    "img": "images/collection/col_3.png",
+    "img": "/images/collection/col_3.png",
     "imgDesc": "수중 파빌리온",
     "year": "2017"
   },
   {
     "name": "무한간의 삼각형",
     "artist": "김차섭 KIM Tchahsup",
-    "img": "images/collection/col_4.png",
+    "img": "/images/collection/col_4.png",
     "imgDesc": "무한간의 삼각형",
     "year": "1976"
   },
   {
     "name": "웃는 돌들-A",
     "artist": "이영애 LEE Youngae",
-    "img": "images/collection/col_5.png",
+    "img": "/images/collection/col_5.png",
     "imgDesc": "웃는 돌들-A",
     "year": "2000"
   }

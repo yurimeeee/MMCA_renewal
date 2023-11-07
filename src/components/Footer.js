@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ChevronUp } from "react-bootstrap-icons";
 export default function Footer() {
+  const [isVisible, setISvisible] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setISvisible(true);
+    } else {
+      setISvisible(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  const backToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
-      <aside>
+      <aside
+        className={isVisible ? "visible top-btn" : "top-btn"}
+        onClick={backToTop}
+      >
         <ChevronUp size={30} />
       </aside>
       <footer>
@@ -25,19 +45,19 @@ export default function Footer() {
           <div>
             <ul>
               <li>
-                <a href="#">개인정보처리방침</a>
+                <a href="">개인정보처리방침</a>
               </li>
               <li>
-                <a href="#">이용약관</a>
+                <a href="">이용약관</a>
               </li>
               <li>
-                <a href="#">자주 묻는 질문</a>
+                <a href="">자주 묻는 질문</a>
               </li>
               <li>
-                <a href="#">개인정보처리방침</a>
+                <a href="">개인정보처리방침</a>
               </li>
               <li>
-                <a href="#">저작권 정책</a>
+                <a href="">저작권 정책</a>
               </li>
             </ul>
           </div>

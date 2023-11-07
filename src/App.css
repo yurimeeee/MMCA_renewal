@@ -11,7 +11,9 @@ ol,
 ul {
   padding-left: 0;
 }
-
+/* .hidden {
+  display: none;
+} */
 .sec-tt {
   /* 섹션 타이틀 */
   text-align: center;
@@ -459,6 +461,27 @@ footer .logo {
 }
 footer p {
   text-align: center;
+}
+
+.top-btn {
+  width: 45px;
+  height: 45px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 50%;
+  background: #575757;
+  color: #f3f3f3;
+  position: fixed;
+  right: 5vw;
+  bottom: 150px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.top-btn.visible {
+  opacity: 1;
+  visibility: visible;
 }
 /* flex-xs-column flex-sm-row */
 
