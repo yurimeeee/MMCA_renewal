@@ -108,25 +108,18 @@ section {
   position: relative;
   line-height: 35px;
 }
-/* .menu > ul {
-  line-height: 45px;
-} */
+
 .menu li {
   padding: 0 15px;
 }
 
 .menu ul .submenu {
-  /* position: absolute; */
-  /* top: 100%; */
   display: none;
-  /* left: 0; */
   transition: 0.5s;
-  /* width: 100vw; */
 }
 
 .menu > ul > li:hover .submenu {
   position: absolute;
-  /* top: 100%; */
   display: flex;
   justify-content: center;
   left: 50%;
@@ -139,15 +132,7 @@ section {
     padding: 0 7px;
   }
 }
-/* .m-menu-bg {
-  width: 100vw;
-  height: 100vh;
-  background: #ffffff;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 100;
-} */
+
 .m-menu-bg.container {
   width: 100vw;
   height: 100vh;
@@ -161,11 +146,6 @@ section {
   left: 100%;
   transition: 0.5s;
 }
-/* .m-menu-bg.container.active {
-  display: block !important;
-  justify-content: start !important;
-  left: 0 !important;
-} */
 
 .m-menu {
   font-size: 20px;
@@ -192,17 +172,82 @@ section {
   display: none;
   font-weight: 400;
 }
+.menu-inner {
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .m-menu .m-submenu.active {
   display: block !important;
   margin-left: 30px;
   font-size: 20px;
 }
-
+.m-login-signup a {
+  margin: 5px 10px;
+}
+.m-language {
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.login-signup {
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  white-space: nowrap;
+}
+.login-signup a {
+  padding: 5px 10px;
+}
+.header.sticky .nav-wrap {
+  display: flex;
+  gap: 40px;
+}
+.header.sticky .login-signup {
+  position: relative;
+  top: 0;
+  right: 0;
+  line-height: 55px;
+}
 .menu-wrap {
-  /* display: inline-block; */
   position: absolute;
   right: 0;
   top: 0;
+}
+.language {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 2px 5px;
+}
+.search {
+  background: #f2f2f2;
+  width: 70%;
+  margin: 30px auto;
+  padding: 10px 0;
+}
+.search input {
+  width: 80%;
+  border: none;
+  background: none;
+}
+.search button {
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  header .container {
+    max-width: 740px;
+  }
+  .menu li {
+    padding: 0 8px;
+  }
+  .header.sticky .nav-wrap {
+    display: flex;
+    gap: 30px;
+  }
 }
 .home-img {
   background: url(../public/images/home-001.jpg) no-repeat center/cover;
