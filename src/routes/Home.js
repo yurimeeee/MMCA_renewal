@@ -3,6 +3,8 @@ import BranchData from "../data/branch.json";
 import ExhibitonSlide from "../components/ExhibitionSlide";
 import collectionData from "../data/collection.json";
 import digitalGallery from "../data/digitalGallery.json";
+// import newsletter from "../data/newsletter.json";
+import NewsLetter from "../components/NewsLetter";
 import { ChevronRight } from "react-bootstrap-icons";
 
 const Home = () => {
@@ -108,6 +110,31 @@ const Home = () => {
             </div>
           ))}
         </div>
+      </section>
+      <section className="sec6 container">
+        <h2 className="sec-tt">NEWS LETTER</h2>
+        <p className="see-more container">
+          <a href="">
+            뉴스레터 모두보기
+            <ChevronRight />
+          </a>
+        </p>
+        <NewsLetter />
+        {/* <div className="row coll-wrap">
+          {newsletter.map((item, index) => (
+            <div className="col coll-box" key={index}>
+              <div className="coll-bg">
+                <p>{item.year}</p>
+                <img
+                  src={process.env.PUBLIC_URL + item.img}
+                  alt={item.imgDesc}
+                />
+              </div>
+              <h3>{item.name}</h3>
+              <p>{item.artist}</p>
+            </div>
+          ))}
+        </div> */}
       </section>
     </main>
   );
