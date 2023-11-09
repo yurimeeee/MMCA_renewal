@@ -32,6 +32,7 @@ const Nav = () => {
       mobileMenuRef.current.style.left = isMenuOpen
         ? "calc(-100vw + 52px)"
         : "100%";
+      mobileMenuRef.current.style.display = isMenuOpen ? "block" : "none";
     }
   }, [isMenuOpen]);
 
