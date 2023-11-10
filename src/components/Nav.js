@@ -48,7 +48,13 @@ const Nav = () => {
           <button onClick={toggleMenu} className="m-menu-btn">
             <Plus size={40} />
           </button>
-          <div className="m-menu-bg container" ref={mobileMenuRef}>
+
+          <div
+            className={
+              isMenuOpen ? "m-menu-bg container open" : "m-menu-bg container"
+            }
+            ref={mobileMenuRef}
+          >
             <div className="m-btn-wrap">
               <button onClick={toggleMenu} className="menu-close">
                 <X size={40} />
