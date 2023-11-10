@@ -177,7 +177,8 @@ const Nav = () => {
           <nav className="menu">
             <ul>
               <li>
-                <Link to="/Preview">관람 참여</Link>
+                관람 참여
+                {/* <Link to="/Preview">관람 참여</Link> */}
                 <ul className="submenu">
                   <li>서울</li>
                   <li>과천</li>
@@ -187,7 +188,8 @@ const Nav = () => {
                 </ul>
               </li>
               <li>
-                <Link to="/exhibit">전시</Link>
+                전시
+                {/* <Link to="/exhibit">전시</Link> */}
                 <ul className="submenu">
                   <li>현재 전시</li>
                   <li>예정 전시</li>
@@ -195,13 +197,15 @@ const Nav = () => {
                 </ul>
               </li>
               <li>
-                <Link to="/education">교육</Link>
+                교육
+                {/* <Link to="/education">교육</Link> */}
                 <ul className="submenu">
                   <li>미술관 교육소개</li>
                 </ul>
               </li>
               <li>
-                <Link to="/collection">소장품</Link>
+                소장품
+                {/* <Link to="/collection">소장품</Link> */}
                 <ul className="submenu">
                   <li>소장품 검색</li>
                   <li>소장품 탐색</li>
@@ -209,7 +213,8 @@ const Nav = () => {
                 </ul>
               </li>
               <li>
-                <Link to="/research">미술연구</Link>
+                미술연구
+                {/* <Link to="/research">미술연구</Link> */}
                 <ul className="submenu">
                   <li>도서와 아카이브</li>
                   <li>연구</li>
@@ -217,7 +222,8 @@ const Nav = () => {
                 </ul>
               </li>
               <li>
-                <Link to="/digital">디지털 미술관</Link>
+                디지털 미술관
+                {/* <Link to="/digital">디지털 미술관</Link> */}
                 <ul className="submenu">
                   <li>맞춤 검색</li>
                   <li>오디오 가이드</li>
