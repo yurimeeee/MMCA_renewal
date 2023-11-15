@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Renewal Project - MMCA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MMCA 국립현대미술관 랜딩페이지 리뉴얼 프로젝트
+</br></br>
+![image](https://github.com/yurimeeee/MMCA_renewal/assets/137126594/57269ac5-fbaa-474b-a90d-f41290848d10)
+</br>
+</br>
 
-## Available Scripts
+## 👀프로젝트 소개
+* React를 활용한 반응형 웹사이트 리뉴얼.
+* 구직용 포트폴리오 사이트로 국립현대미술관과는 무관함을 안내 드립니다.
+* 사용된 이미지와 내용의 저작권은 국립현대미술관에 있으므로, 무단으로 사용할 수 없습니다.
+</br>
 
-In the project directory, you can run:
+## 🤝Edge Team's
+* 개발기간: 2023. 11. 04 ~ 2023. 11. 08
+</br>
 
-### `npm start`
+## 🎯제작의도 및 목적
+* UI 개선을 통한 기존 사이트 편의성 및 사용성 증진
+* 주 타겟층 2030세대를 겨냥한 트렌디한 디자인 반영 (심미성 개선)
+* 킬러 콘텐츠 + 공식 캐릭터 전략적 접목을 통한 brand loyalty 및 identity 강화
+</br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎨디자인 시안 & 구현페이지
+</br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![MMCA - 국립현대미술관](https://github.com/yurimeeee/MMCA_renewal/assets/137126594/c0b88c94-a461-469d-bfb1-8b7940960e39)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://github.com/yurimeeee/MMCA_renewal/assets/137126594/c0b88c94-a461-469d-bfb1-8b7940960e39)
