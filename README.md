@@ -17,6 +17,16 @@ MMCA 국립현대미술관 랜딩페이지 리뉴얼 프로젝트
 * 2023.11.04 - 2023.11.08
 </br>
 
+
+## 🛠️사용 스킬
+  <span style="width: 400px; display:inline-block">
+    <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white"/>
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
+    <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"/>
+  </span>
+</br>
+</br>
+
 ## 🎯제작의도 및 목적
 * UI 개선을 통한 기존 사이트 편의성 및 사용성 증진
 * 주 타겟층 20-40세대를 겨냥한 트렌디한 디자인 반영 (심미성 개선)
